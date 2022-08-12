@@ -1,6 +1,6 @@
 # Foundation Layout
 
-[Site link:](https://vitalii7845.github.io/Foundation-Layout/)
+[Site link:](https://vitalii7845.github.io/-Foundation-Layout-f/)
 
 Layout supports mobile (up-to-320 px) and desktop (up-to-1400) versions
 
