@@ -1,0 +1,222 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+
+  &__description {
+    display: none;
+    width: 360px;
+    margin-top: 26px;
+    line-height: 26px;
+    font-size: 18px;
+    color: $text-color-light-grey;
+
+    @include for-large-up {
+      display: block;
+    }
+  }
+
+  &__line {
+    width: 100%;
+    margin: 0;
+    margin-top: 40px;
+    border-top: 1px solid #2b292d;
+    opacity: 0.1;
+
+    @include for-large-up {
+      margin: 0;
+    }
+  }
+
+  .logo {
+    display: none;
+    @include for-large-up {
+      display: flex;
+    }
+  }
+}
+
+.about-company {
+  margin-top: 44px;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @include for-large-up {
+    display: flex;
+    flex-direction: row;
+    width: 1140px;
+    height: 338px;
+    margin: 0 auto;
+  }
+}
+
+.downloads {
+  display: flex;
+  justify-content: center;
+  margin: 25px 15px 0 15px;
+
+  @include for-large-up {
+    justify-content: left;
+    margin: 0;
+    margin-top: 25px;
+  }
+  &__item {
+    margin-right: 10px;
+  }
+}
+
+.additional-navigation {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  @include for-large-up {
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: auto;
+  }
+
+  &__column {
+    margin-top: 30px;
+    @include for-large-up {
+    }
+    margin-top: 0;
+    margin-right: 29px;
+  }
+}
+
+.nav-links {
+  width: 265px;
+
+  &__title {
+    margin: 0;
+    margin-top: 30px;
+    line-height: 28px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2b292d;
+    @include for-large-up {
+      margin-top: 0;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    margin-top: 18px;
+    line-height: 30px;
+    font-size: 18px;
+    list-style-type: none;
+    color: $text-color-light-grey;
+  }
+  &__list-link {
+    text-decoration: none;
+    color: $text-color-light-grey;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+
+  @include for-large-up {
+    flex-direction: row;
+    height: 50px;
+    width: 1140px;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.terms {
+  margin-top: 30px;
+  line-height: 22px;
+  font-size: 14px;
+
+  @include for-large-up {
+    margin-top: 0;
+    line-height: 50px;
+  }
+
+  &__items {
+    margin-right: 22px;
+    text-decoration: none;
+    color: $text-color-light-grey;
+  }
+}
+
+.social-links {
+  margin-top: 30px;
+  margin-bottom: 23px;
+
+  @include for-large-up {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  &__item {
+    margin-left: 20px;
+    text-decoration: none;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+}
+// <=
+
+.logo-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include for-large-up {
+    display: none;
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__name {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__description {
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    color: $text-color-light-grey;
+  }
+}
+
+.twitter-icon {
+  display: inline-block;
+  width: 21px;
+  height: 16px;
+  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png');
+}
+.facebook-icon {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png');
+}
+.linkedin-icon {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png');
+}

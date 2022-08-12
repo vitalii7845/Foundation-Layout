@@ -1,0 +1,92 @@
+.features {
+  display: none;
+
+  @include for-large-up {
+    display: flex;
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    width: 1140px;
+    padding-bottom: 77px;
+    margin: auto;
+  }
+
+  &__column {
+    width: 459px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    line-height: 34px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #009b4d;
+  }
+
+  &__title {
+    margin-top: 24px;
+    margin-bottom: 0;
+    line-height: 56px;
+    font-size: 56px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+  }
+
+  &__description {
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 34px;
+    font-size: 24px;
+  }
+
+  &__advantage-header {
+    display: flex;
+    margin-top: 42px;
+    line-height: 42px;
+  }
+
+  &__advantage-title {
+    margin: 0;
+    margin-left: 15px;
+    line-height: 26px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #3142c6;
+  }
+
+  &__advantage-description {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 8px;
+    border-bottom: 3px solid #3142c6;
+    line-height: 26px;
+    font-size: 18px;
+  }
+
+  &__advantage-item {
+    display: flex;
+    padding-bottom: 22px;
+    margin-top: 21px;
+    border-bottom: 1px solid #2b292d26;
+  }
+
+  &__advantage-item-text {
+    margin-left: 15px;
+    line-height: 26px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__left-decoration {
+    position: absolute;
+    height: 166px;
+    top: 258px;
+  }
+
+  &__banner {
+    position: absolute;
+    right: 0;
+  }
+}

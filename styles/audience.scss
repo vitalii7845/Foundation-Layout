@@ -1,0 +1,164 @@
+.audience {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 15px;
+  background-color: #00a1c612;
+
+  @include for-large-up {
+    align-items: center;
+    padding: 108px 131px 110px 130px;
+  }
+
+  &__subtitle {
+    line-height: 34px;
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__title {
+    text-align: center;
+    line-height: 40px;
+    margin: 17px 0 0 0;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.357143px;
+
+    @include for-large-up {
+      text-align: center;
+      width: 555px;
+      line-height: 56px;
+      margin-top: 24px;
+      font-size: 56px;
+      letter-spacing: -0.5px;
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    line-height: 34px;
+    margin-top: 18px;
+    font-size: 24px;
+
+    @include for-large-up {
+      width: 555px;
+      margin-top: 30px;
+    }
+  }
+
+  &__actions {
+    @include for-large-up {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__get-started-btn {
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+
+    @include for-large-up {
+      width: 160px;
+      margin: 34px 16px 0 0;
+    }
+  }
+
+  &__learn-more-btn {
+    width: 100%;
+    margin-top: 12px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+
+    @include for-large-up {
+      width: 160px;
+      margin-top: 34px;
+    }
+  }
+
+  &__cards {
+    margin-top: 40px;
+    @include for-large-up {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 111px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px 0;
+    border: 0;
+    border-radius: 8px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 1e-5) 100%
+      ),
+      $color-white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+
+    &:hover {
+      background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.05) 0%,
+          rgba(255, 255, 255, 1e-5) 100%
+        ),
+        $color-blue-button;
+      cursor: pointer;
+
+      & figcaption {
+        color: $color-white;
+      }
+    }
+
+    @include for-large-up {
+      width: 262px;
+      margin: 0 30px 0 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  & card:first-of-type {
+    margin-top: 40px;
+
+    @include for-large-up {
+      margin-top: 0;
+    }
+  }
+
+  &__card-description {
+    line-height: 28px;
+    margin-top: 22px;
+    margin-bottom: 33px;
+    font-size: 22px;
+    font-weight: 700;
+
+    @include for-large-up {
+      width: 212px;
+      text-align: center;
+    }
+  }
+
+  &__card-image {
+    margin-top: 22px;
+  }
+}
+
+.checked-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%),
+    $color-blue-button;
+  color: $color-white;
+}

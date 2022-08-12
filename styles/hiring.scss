@@ -1,0 +1,152 @@
+.hiring {
+  padding: 50px 15px;
+
+  @include for-large-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 106px auto 110px auto;
+    max-width: 750px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+
+    @include for-large-up {
+      font-size: 56px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0;
+    margin-top: 18px;
+    text-align: center;
+
+    @include for-large-up {
+      margin-top: 20px;
+      width: 555px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: 48px;
+    margin-top: 30px;
+    border-radius: 2px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    background-blend-mode: overlay;
+    background: $color-blue-button;
+    color: $color-white;
+
+    @include for-large-up {
+      width: 247px;
+      margin-top: 28px;
+    }
+  }
+
+  &__vacancies {
+    margin-top: 39px;
+
+    @include for-large-up {
+      width: 100%;
+      margin-top: 110px;
+    }
+  }
+
+  &__vacancy {
+    margin-top: 15px;
+
+    @include for-large-up {
+      margin-top: 30px;
+      height: 80px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.vacancy {
+  display: flex;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid $border-color;
+  text-decoration: none;
+  color: $text-color-dark;
+
+  &:hover {
+    background-color: $color-dark-blue;
+
+    .vacancy__title {
+      color: $text-color-white;
+    }
+
+    .vacancy__location {
+      color: $text-color-white;
+    }
+
+    .vacancy__arrow-container {
+      background-color: transparent;
+    }
+
+    .icon-arrow_right {
+      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
+    }
+  }
+
+  &__details {
+    flex: 1;
+    padding: 20px;
+
+    @include for-large-up {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    line-height: 28px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__location {
+    margin-top: 7px;
+    line-height: 22px;
+    font-size: 16px;
+    color: $text-color-light-grey;
+
+    @include for-large-up {
+      flex: 1;
+      max-width: 232px;
+      margin-top: 0;
+      margin-left: auto;
+    }
+  }
+
+  &__arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: $color-grey;
+
+    @include for-large-up {
+      background-color: $color-white;
+    }
+  }
+}

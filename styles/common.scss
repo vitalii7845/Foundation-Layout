@@ -1,0 +1,133 @@
+.default_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  line-height: 13px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 18px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%),
+    $color-white;
+
+  &:hover {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 1e-5) 100%
+      ),
+      $color-blue-button;
+    color: $color-white;
+    cursor: pointer;
+  }
+}
+
+.checked_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  line-height: 13px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 18px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%),
+    $color-blue-button;
+  color: $color-white;
+
+  &:hover {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 1e-5) 100%
+      ),
+      $color-blue-button;
+    color: $color-white;
+    cursor: pointer;
+  }
+}
+
+.checked {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%),
+    $color-blue-button;
+  color: $color-white;
+}
+
+.action-button {
+  background-color: $color-blue-button;
+  color: $color-white;
+  width: 160px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 2px;
+  border: none;
+
+  &_secondary {
+    color: $text-color-black;
+    background-color: $color-white;
+  }
+}
+
+//repear
+.action-button-standart {
+  background-color: $color-white;
+  color: $text-color-black;
+  width: 160px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 2px;
+  border: none;
+  &_secondary {
+    color: $color-white;
+    background-color: $color-blue-button;
+  }
+}
+
+.buttom_get-started_checked {
+  width: 290px;
+  height: 48px;
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: $color-blue-button;
+  color: $color-white;
+
+  @include for-large-up {
+    width: 160px;
+  }
+}
+
+.button_learn-more_normal {
+  width: 290px;
+  height: 48px;
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: $color-white;
+  color: $text-color-dark;
+
+  @include for-large-up {
+    width: 158px;
+  }
+}
+
+.hide_desktop {
+  @include for-large-up {
+    display: none;
+  }
+}
+
+.icon-arrow_right {
+  display: block;
+  width: 7px;
+  height: 12px;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
+}
