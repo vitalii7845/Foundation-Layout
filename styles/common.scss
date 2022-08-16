@@ -119,11 +119,11 @@
   }
 }
 
-.hide_desktop {
-  @include for-large-up {
-    display: none;
-  }
-}
+// .hide_desktop {
+//   @include for-large-up {
+//     display: none;
+//   }
+// }
 
 .icon-arrow_right {
   display: block;

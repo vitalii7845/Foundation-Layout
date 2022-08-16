@@ -104,12 +104,6 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .hide_desktop {
-    display: none;
-  }
-}
-
 .icon-arrow_right {
   display: block;
   width: 7px;
@@ -985,15 +979,16 @@
   }
 }
 .footer__line {
-  width: 100%;
-  margin: 0;
-  margin-top: 40px;
-  border-top: 1px solid #2b292d;
-  opacity: 0.1;
+  display: none;
 }
 @media screen and (min-width: 1400px) {
   .footer__line {
+    display: block;
+    width: 100%;
     margin: 0;
+    margin-top: 40px;
+    border-top: 1px solid #2b292d;
+    opacity: 0.1;
   }
 }
 .footer .logo {
