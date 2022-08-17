@@ -202,6 +202,18 @@
   }
 }
 
+.hide_desktop {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-top: 40px;
+  border-top: 1px solid #2b292d;
+  opacity: 0.1;
+  @include for-large-up {
+    display: none;
+  }
+}
+
 .twitter-icon {
   display: inline-block;
   width: 21px;
