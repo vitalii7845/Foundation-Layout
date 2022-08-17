@@ -885,6 +885,11 @@
   max-width: 555px;
   margin: auto;
 }
+@media screen and (min-width: 1400px) {
+  .order__details {
+    margin-left: 0;
+  }
+}
 .order__image {
   display: flex;
   max-width: 200px;
@@ -894,7 +899,7 @@
   .order__image {
     display: inline;
     max-width: 269px;
-    margin-right: 121px;
+    margin-left: 224px;
   }
 }
 .order__title {
@@ -917,7 +922,7 @@
   font-size: 24px;
 }
 .order__form {
-  margin-top: 40px;
+  margin-top: 26px;
 }
 @media screen and (min-width: 1400px) {
   .order__form {
