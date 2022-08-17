@@ -883,6 +883,7 @@
 }
 .order__details {
   max-width: 555px;
+  margin: auto;
 }
 .order__image {
   display: flex;
@@ -893,22 +894,30 @@
   .order__image {
     display: inline;
     max-width: 269px;
-    margin: 0;
     margin-right: 121px;
   }
 }
 .order__title {
+  text-align: center;
   margin-top: 40px;
   line-height: 40px;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -0.357143px;
 }
+@media screen and (min-width: 1400px) {
+  .order__title {
+    text-align: start;
+  }
+}
 .order__text {
   margin: 0;
   margin-top: 18px;
   line-height: 34px;
   font-size: 24px;
+}
+.order__form {
+  margin-top: 40px;
 }
 @media screen and (min-width: 1400px) {
   .order__form {
@@ -986,7 +995,6 @@
     display: block;
     width: 100%;
     margin: 0;
-    margin-top: 40px;
     border-top: 1px solid #2b292d;
     opacity: 0.1;
   }
