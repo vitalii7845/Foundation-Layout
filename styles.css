@@ -885,6 +885,11 @@
   max-width: 555px;
   margin: auto;
 }
+@media screen and (min-width: 1400px) {
+  .order__details {
+    margin: 0;
+  }
+}
 .order__image {
   display: flex;
   max-width: 200px;
@@ -894,8 +899,8 @@
   .order__image {
     display: inline;
     max-width: 269px;
-    margin-right: 0;
-    margin-left: 224px;
+    margin: 0;
+    margin-right: 121px;
   }
 }
 .order__title {
