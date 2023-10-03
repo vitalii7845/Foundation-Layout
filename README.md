@@ -12,4 +12,4 @@ Layout supports mobile (up-to-320 px) and desktop (up-to-1400) versions
 - [Mobile first](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first/)
 
 Author:
-Khomyk Vitalii
+Vitalii Khomyk
